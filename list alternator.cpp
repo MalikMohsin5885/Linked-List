@@ -1,3 +1,5 @@
+//NAME : MOHSIN RASHEED 	REG # SP22-BCS-062
+
 #include<iostream>
 using namespace std;
 //--------------------------LINKED LIST----------------------->
@@ -81,13 +83,15 @@ void noName(node *&L1 , node *&L2)
 	{
 		if(L2->next == NULL)
 		{
+			cout<<"			L2->next == NULL		"<<endl;
 			P->next = E;
 			L2 = NULL;
-			E->next = NULL;
+			E->next = Q;
 			P = NULL;
 		}
 		else if(Q != NULL)
 		{
+			cout<<"			Q != NULL		"<<endl;
 			P->next = E;
 			L2 = E->next;
 			E->next = Q;
@@ -97,6 +101,7 @@ void noName(node *&L1 , node *&L2)
 		}
 		else
 		{
+			cout<<"			else		"<<endl;
 			P->next = E;
 			L2 = E->next;
 			E->next = NULL;
